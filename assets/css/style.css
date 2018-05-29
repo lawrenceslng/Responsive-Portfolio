@@ -1,0 +1,217 @@
+/* element styling */
+
+a{
+    font-size: 25px;
+    margin: auto;
+    text-decoration: none;
+    padding: 15px;
+    color: gray;
+}
+/* unvisited link */
+a:link {
+    color: gray;
+}
+/* mouse over link */
+a:hover {
+    color: black;
+} 
+html, body{
+    height: 100%;
+}
+body{
+    background-image: url("../images/what-the-hex.png");
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    float: right;
+    margin: 10px 0;
+    /* color: #777777; */
+}
+h2{
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 28px;
+    font-weight: bolder;
+    color: teal;
+    padding: 10px;
+}
+form{
+    font-weight: bolder;
+    padding: 10px;
+}
+input{
+    width: 100%;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+input[type=submit]{
+    width: auto;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+img{
+    float: left;
+    margin: 10px; 
+}
+p{
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    line-height: 150%;
+    padding: 10px;
+    color: #777777;
+}
+ul{
+    text-align: center;
+}
+
+/* class styling */
+.active{
+    color: black;
+}
+.body{
+    margin: 25px auto;
+    width: 960px;
+    height: auto;
+    border: 2px solid #dddddd;
+    background-color: #ffffff;
+    color: #777777;
+}
+.container{
+    width: 100%;
+    flex: 1 0 auto;
+}
+.header{
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #cccccc;
+    background-color:#ffffff;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+.footer{
+    width: 100%;
+    height: 75px;
+    margin: 25px auto;
+    background-color: #666666;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    flex-shrink: 0;
+}
+.portfolioImage{
+    float: left;
+    margin: 10px; 
+    height: 150px;
+}
+.portfolioBody{
+    height: 600px;
+}
+/* id styling */
+#headerContent{
+    max-width: 960px;
+    height: 100%;
+    margin: auto;
+}
+#footerContent{
+    color: white;
+    text-align: center;
+    margin: auto;
+    width: 960px;
+    padding: 25px 0px;
+}
+#message{
+    width: 100%;
+    padding: 12px 20px;
+    height: 100px;
+}
+#name{
+    float: left;
+    background-color: #4aaaa5;
+    font-size: 42px;
+    height: 100%;
+    color: white;
+    padding: 0 10px;
+}
+#overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* @media changes */
+@media(max-width: 980px) {
+    /* body{
+        max-width:auto;
+    } */
+.body{
+    margin: 25px 25px;
+    width: 600px;
+}
+#headerContent{
+    margin: 0 25px;
+}
+img{
+    width: 275px;
+    height: auto;
+} 
+.portfolioImage{
+    float: left;
+    margin: auto; 
+    height: auto;
+}
+
+}
+
+@media(max-width: 768px) {
+    .body{
+        margin: 25px 25px;
+        width: auto;
+    }
+    #headerContent{
+        margin: 0 25px;
+    }
+    a{
+        font-size: 15px;
+    }
+    nav{
+        margin: 15px 0px;
+    }
+    #footerContent{
+        width:auto;
+    }
+}
+
+@media(max-width: 640px) {
+    h2{
+        padding:0;
+    }
+    #name{
+        width: 100%;
+        text-align: center;
+    }
+.header{
+    border-bottom: none;
+    background-color:none;
+}
+    nav{
+        text-align: center;
+    background-color: white;
+    font-size: 20px;
+    float: none;
+    }
+    .body{
+        margin: 20px;
+        width: auto;
+    }
+    #footerContent{
+        width:auto;
+    }
+    .portfolioBody{
+        height:800px;
+    }
+
+}
